@@ -8,7 +8,7 @@
 
 /* 목록 스타일 제거 */
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 /* 링크 스타일 제거 */
@@ -29,7 +29,7 @@ html, body {
 
 /* Body의 기본 스타일 설정 */
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Noto Sans KR', sans-serif; /* 본고딕체 폰트 설정 */
   background: #333;
   color: #fff;
@@ -100,16 +100,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* 메인 헤더의 부가 정보 스타일 설정 */
-#main_header .origin {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 29px;
-  margin-bottom: 30px;
-}
-
 /* 부가 정보 항목 스타일 설정 */
 #main_header .origin > li > span {
   font-size: 14px;
@@ -147,16 +137,15 @@ body {
 /* 메인메뉴(gnb) */
 #gnb {
   position: fixed;
-  background: #f6f6f6;
-  right: -390PX; 
-  top: 0;
+  background: #F6F6F6;
+  right: -390px; top: 0;
   width: 390px;
   height: 100%;
   transition-duration: 0.4s;
   z-index: 999;
 }
 
-#gnb .show {
+#gnb.show {
   right: 0;
 }
 
@@ -180,13 +169,19 @@ body {
   font-size: 2em;
 }
 
+#gnb > ul > li > a {
+  display: block;
+  line-height: 80px;
+  color: #333;
+}
+
 #gnb > ul > li > a:hover {
-  background: #ed1c24;
+  background: #ED1C24;
   color: #fff;
 }
 
 #gnb > ul > li.active a {
-  background: #ed1c24;
+  background: #ED1C24;
   color: #fff;
 }
 
